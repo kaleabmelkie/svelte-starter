@@ -1,5 +1,5 @@
-<script>
-  import { Meta, Story, Template } from '@storybook/addon-svelte-csf'
+<script lang="ts">
+  import { Meta,Story,Template } from '@storybook/addon-svelte-csf'
   import Hello from './hello.svelte'
 </script>
 

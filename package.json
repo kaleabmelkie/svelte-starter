@@ -1,13 +1,15 @@
 {
   "name": "svelte-storybook-starter",
-  "svelte": "src/index.js",
+  "svelte": "src/index.ts",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "types": "src/index.ts",
   "scripts": {
+    "prepublishOnly": "npm run format && npm run check && npm run build",
     "lint": "prettier --check src \"*.{json,js,cjs,ts,tsx,svelte}\" --ignore-path ./.gitignore --plugin-search-dir .",
     "format": "prettier --check --write src \"*.{json,js,cjs,ts,tsx,svelte}\" --ignore-path ./.gitignore --plugin-search-dir .",
     "build": "rollup -c",
-    "prepublishOnly": "npm run build",
+    "check": "svelte-check",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -17,7 +19,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.8",
+    "@rollup/plugin-commonjs": "21.0.2",
     "@rollup/plugin-node-resolve": "13.1.3",
+    "@rollup/plugin-typescript": "8.3.1",
     "@storybook/addon-actions": "6.4.19",
     "@storybook/addon-essentials": "6.4.19",
     "@storybook/addon-links": "6.4.19",
@@ -27,8 +31,13 @@
     "prettier": "2.6.0",
     "rollup": "2.70.1",
     "rollup-plugin-svelte": "7.1.0",
+    "rollup-plugin-terser": "7.0.2",
     "svelte": "3.46.4",
-    "svelte-loader": "3.1.2"
+    "svelte-check": "2.4.6",
+    "svelte-loader": "3.1.2",
+    "svelte-preprocess": "4.10.4",
+    "tslib": "2.3.1",
+    "typescript": "4.6.2"
   },
   "keywords": [
     "svelte"
