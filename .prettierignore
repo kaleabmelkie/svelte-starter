@@ -1,4 +1,3 @@
 /storybook-static/**
 /node_modules/**
-/tailwind-components/**
 package-lock.json

@@ -2,4 +2,4 @@
   export let name: string
 </script>
 
-<h1 class="text-4xl">Hello, {name}!</h1>
+<h1 class="font-semibold text-4xl underline underline-offset-8">Hello, {name}!</h1>

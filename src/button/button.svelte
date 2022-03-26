@@ -3,18 +3,17 @@
 </script>
 
 <button
-  {...$$restProps}
   class="
   px-6 py-4
-  border border-gray-100 focus:border-gray-200 rounded-md
+  rounded-full
   font-semibold
-  bg-white text-gray-700 focus:text-black
-  hover:shadow-sm
+  hover:shadow-sm active:shadow-inner
+  hover:translate-y-[-1px] active:translate-y-0 active:scale-[.99]
   transition-all
 
-  {primary ? 'bg-indigo-600 text-white' : ''}
-
-  {$$restProps.class ?? ''}
+  {primary
+    ? 'bg-indigo-600 text-indigo-50 hover:text-white'
+    : 'border border-gray-100 hover:border-gray-200 bg-white text-gray-700 hover:text-black'}
   "
 >
   <slot />
