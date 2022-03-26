@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*.svelte", "src/**/*.ts"],
   "exclude": ["node_modules/*", "dist/*"],
   "compilerOptions": {
     "target": "es2020",

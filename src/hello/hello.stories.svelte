@@ -1,15 +1,9 @@
 <script lang="ts">
-  import { Meta,Story,Template } from '@storybook/addon-svelte-csf'
+  import { Meta, Story, Template } from '@storybook/addon-svelte-csf'
   import Hello from './hello.svelte'
 </script>
 
-<Meta
-  title="Examples/Hello"
-  component={Hello}
-  argTypes={{
-    name: { control: 'text' },
-  }}
-/>
+<Meta title="Examples/Hello" component={Hello} />
 
 <Template let:args>
   <Hello {...args} />

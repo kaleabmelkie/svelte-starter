@@ -7,14 +7,11 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-svelte-csf',
+    '@storybook/addon-storysource',
+    '@storybook/addon-a11y',
   ],
   framework: '@storybook/svelte',
-
-  webpackFinal: async (config) => {
-    const svelteLoader = config.module.rules.find(
-      (r) => r.loader && r.loader.includes('svelte-loader')
-    )
-    svelteLoader.options.preprocess = require('svelte-preprocess')()
-    return config
+  svelteOptions: {
+    preprocess: require('svelte-preprocess')({ postcss: true }),
   },
 }
