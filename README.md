@@ -1,4 +1,4 @@
-# node-starter
+# svelte-tailwind-storybook-starter
 
 A starter SvelteKit package using Storybook, Tailwind CSS, TypeScript, Prettier, ESLint, and PNPM.
 
