@@ -1,16 +1,3 @@
 {
-  "include": ["src/**/*.svelte", "src/**/*.ts"],
-  "exclude": ["node_modules/*", "dist/*"],
-  "compilerOptions": {
-    "target": "es2020",
-    "module": "es2020",
-    "sourceMap": true,
-    "strict": true,
-    "moduleResolution": "node",
-    "types": ["svelte"],
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+  "extends": "./.svelte-kit/tsconfig.json"
 }
