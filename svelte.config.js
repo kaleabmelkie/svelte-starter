@@ -13,6 +13,13 @@ const config = {
 
   kit: {
     adapter: adapter(),
+
+    package: {
+      exports: (filepath) =>
+        (filepath.endsWith('.svelte') &&
+          !filepath.endsWith('.stories.svelte')) ||
+        filepath.endsWith('index.css'),
+    },
   },
 }
 
