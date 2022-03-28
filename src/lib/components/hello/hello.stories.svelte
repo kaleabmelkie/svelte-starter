@@ -9,5 +9,4 @@
   <Hello {...args} />
 </Template>
 
-<Story name="Default" args={{}} />
-<Story name="Developer" args={{ name: 'Developer' }} />
+<Story name="World" args={{ name: 'World' }} />
