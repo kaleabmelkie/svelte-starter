@@ -33,6 +33,9 @@ pnpm build-storybook
 
 # production packaging:
 pnpm package
+
+# manually updating dependencies:
+pnpm up -i -r -L
 ```
 
 Storybook static output folder (for deployment): `./storybook-static/`
