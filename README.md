@@ -4,7 +4,7 @@ A starter SvelteKit package using Storybook, Tailwind CSS, TypeScript, Prettier,
 
 ## Starter Setup
 
-1. `pnpx degit kaleabmelkie/svelte-tailwind-storybook-starter your-project-name`
+1. `pnpx degit kaleabmelkie/svelte-starter your-project-name`
 
 2. Configure the `name`, `version`, `license` and `private` fields in [package.json](package.json)
 
