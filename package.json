@@ -1,6 +1,6 @@
 {
   "name": "svelte-tailwind-storybook-starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "license": "MIT",
   "type": "module",
