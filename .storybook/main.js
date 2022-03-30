@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   stories: [
     '../src/**/*.stories.mdx',
@@ -29,5 +31,13 @@ module.exports = {
     preprocess: require('svelte-preprocess')({
       postcss: true,
     }),
+  },
+  webpackFinal: async (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      $app: path.resolve(__dirname, './mocks/.svelte-kit/runtime/app'),
+      $lib: path.resolve(__dirname, '../src/lib'),
+    }
+    return config
   },
 }
